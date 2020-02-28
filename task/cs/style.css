@@ -1,0 +1,60 @@
+#Portfoli{
+    padding: 100px 0;
+}
+
+.item{
+    margin: 50px 0;
+    position: relative;
+}
+.item i{
+    position: absolute;
+   
+    top: 115%;
+    left: 49%;
+}
+.item .myIcon::after{
+        content: "";
+    width: 58px;
+    height: 3px;
+    background-color: black;
+    top: 60px;
+    left: 42%;
+    position: absolute;
+}
+.item .myIcon::before{
+    content: "";
+    width: 58px;
+    height: 3px;
+    background-color: black;
+    top: 60px;
+    right: 42%;
+    position: absolute;
+}
+.image{
+   margin-bottom: 30px;
+   position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26,188,156,.9);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+.overlay i{
+    font-size: 50px;
+    color: white;
+
+}
+.image:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+
+}
